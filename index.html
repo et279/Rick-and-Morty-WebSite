@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Web/Style.css">
+    <link rel="stylesheet" href="../Web/Data.js">
+    <title>WebSite</title>
+</head>
+<body>
+    <div class="cont-principal">
+        <script src="../Web/Data.js"></script>
+        <div class="cont-header">
+            <h1>Titulo</h1>
+            <h2>Subtiutlo</h2>
+        </div>
+        <div class="cont-grid">
+            <div class="sub-cont-grid">
+                <div class="cont-part-grid" id="results">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="cont-contador-master">
+            <div class="cont-contador"> 
+                <div class="sub-cont-contador">
+                    <select name="" id="cont-pagination" onchange="apiRM(this.value)">
+                        <script>
+                            for(let i=1; i <=42; i++){
+                                document.write(`<option value="${i}">${i}</option>`)
+                            }
+                        </script>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
